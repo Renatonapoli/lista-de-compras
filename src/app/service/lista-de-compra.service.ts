@@ -42,6 +42,11 @@ export class ListaDeCompraService {
     this.listaDeCompra.splice(Number(id)-1,1, itemEditado)
   }
 
+  limparLocalStorage() {
+    localStorage.setItem("item", JSON.stringify([]))
+    this.listaDeCompra = []
+  }
+
   atualizarLocalstorage() {
     localStorage.setItem("item", JSON.stringify(this.listaDeCompra))
   }

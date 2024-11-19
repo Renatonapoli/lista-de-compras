@@ -33,7 +33,7 @@ export class ItemComponent implements OnInit, OnChanges, OnDestroy {
 
   deletar() {
     console.log('Estão tentando nos calar')
-    this.emitindoItemParaExcluir.emit(this.item)
+    this.emitindoItemParaExcluir.emit(this.item.id)
   }
 
 
